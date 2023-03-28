@@ -1,12 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <title>SET-Checkout</title>
+  </head>
+  <body>
+    <div class="container-sm">
+      <div class="row">
+        <div class="col">
+          <!-- Cart items -->
+          <section></section>
+
+          <!-- Shipping info -->
+          <section>
+            <div class="container-sm">
+              <div class="row">
+                <div class="col">
+                  <h1>Shipping</h1>
+                </div>
+                <div class="col">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="John"
+                  />
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Doe"
+                  />
+                  <label for="address" class="form-label">Street Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="123 Main St"
+                  />
+                  <label for="address2">Street Address 2 (optional)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address2"
+                    placeholder="Suite 456"
+                  />
+                  <label for="zipcode">Zipcode</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zipcode"
+                    placeholder="11233"
+                  />
+                  <label for="state">State</label>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Select
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Alabama</a></li>
+                      <li><a class="dropdown-item" href="#">Alaska</a></li>
+                      <li><a class="dropdown-item" href="#">Arizona</a></li>
+                      <li><a class="dropdown-item" href="#">Arkansas</a></li>
+                      <li><a class="dropdown-item" href="#">California</a></li>
+                      <li><a class="dropdown-item" href="#">Colorado</a></li>
+                      <li><a class="dropdown-item" href="#">Connecticut</a></li>
+                      <li><a class="dropdown-item" href="#">Delaware</a></li>
+                      <li><a class="dropdown-item" href="#">Florida</a></li>
+                      <li><a class="dropdown-item" href="#">Georgia</a></li>
+                      <li><a class="dropdown-item" href="#">Hawaii</a></li>
+                      <li><a class="dropdown-item" href="#">Idaho</a></li>
+                      <li><a class="dropdown-item" href="#">Illinois</a></li>
+                      <li><a class="dropdown-item" href="#">Indiana</a></li>
+                      <li><a class="dropdown-item" href="#">Iowa</a></li>
+                      <li><a class="dropdown-item" href="#">Kansas</a></li>
+                      <li><a class="dropdown-item" href="#">Kentucky</a></li>
+                      <li><a class="dropdown-item" href="#">Louisiana</a></li>
+                      <li><a class="dropdown-item" href="#">Maine</a></li>
+                      <li><a class="dropdown-item" href="#">Maryland</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Massachusetts</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Michigan</a></li>
+                      <li><a class="dropdown-item" href="#">Minnesota</a></li>
+                      <li><a class="dropdown-item" href="#">Mississippi</a></li>
+                      <li><a class="dropdown-item" href="#">Missouri</a></li>
+                      <li><a class="dropdown-item" href="#">Montana</a></li>
+                      <li><a class="dropdown-item" href="#">Nebraska</a></li>
+                      <li><a class="dropdown-item" href="#">Nevada</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">New Hampshire</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">New Jersey</a></li>
+                      <li><a class="dropdown-item" href="#">New Mexico</a></li>
+                      <li><a class="dropdown-item" href="#">New York</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">North Carolina</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">North Dakota</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Ohio</a></li>
+                      <li><a class="dropdown-item" href="#">Oklahoma</a></li>
+                      <li><a class="dropdown-item" href="#">Oregon</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Pennsylvania</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Rhode Island</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">South Carolina</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">South Dakota</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Tennessee</a></li>
+                      <li><a class="dropdown-item" href="#">Texas</a></li>
+                      <li><a class="dropdown-item" href="#">Utah</a></li>
+                      <li><a class="dropdown-item" href="#">Vermont</a></li>
+                      <li><a class="dropdown-item" href="#">Virginia</a></li>
+                      <li><a class="dropdown-item" href="#">Washington</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">West Virginia</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Wisconsin</a></li>
+                      <li><a class="dropdown-item" href="#">Wyoming</a></li>
+                    </ul>
+                  </div>
+                  <label for="city">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="Detroit"
+                  />
+                  <label for="phone">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="(123) 456-7890"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <br /><br /><br />
+          <hr />
+          <!-- Billing info -->
+          <section>
+            <div class="container-sm">
+              <div class="row">
+                <div class="col">
+                  <h1>Billing</h1>
+                </div>
+                <div class="col">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="John"
+                  />
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Doe"
+                  />
+                  <label for="address" class="form-label">Street Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="123 Main St"
+                  />
+                  <label for="address2">Street Address 2 (optional)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address2"
+                    placeholder="Suite 456"
+                  />
+                  <label for="zipcode">Zipcode</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zipcode"
+                    placeholder="11233"
+                  />
+                  <label for="state">State</label>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Select
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Alabama</a></li>
+                      <li><a class="dropdown-item" href="#">Alaska</a></li>
+                      <li><a class="dropdown-item" href="#">Arizona</a></li>
+                      <li><a class="dropdown-item" href="#">Arkansas</a></li>
+                      <li><a class="dropdown-item" href="#">California</a></li>
+                      <li><a class="dropdown-item" href="#">Colorado</a></li>
+                      <li><a class="dropdown-item" href="#">Connecticut</a></li>
+                      <li><a class="dropdown-item" href="#">Delaware</a></li>
+                      <li><a class="dropdown-item" href="#">Florida</a></li>
+                      <li><a class="dropdown-item" href="#">Georgia</a></li>
+                      <li><a class="dropdown-item" href="#">Hawaii</a></li>
+                      <li><a class="dropdown-item" href="#">Idaho</a></li>
+                      <li><a class="dropdown-item" href="#">Illinois</a></li>
+                      <li><a class="dropdown-item" href="#">Indiana</a></li>
+                      <li><a class="dropdown-item" href="#">Iowa</a></li>
+                      <li><a class="dropdown-item" href="#">Kansas</a></li>
+                      <li><a class="dropdown-item" href="#">Kentucky</a></li>
+                      <li><a class="dropdown-item" href="#">Louisiana</a></li>
+                      <li><a class="dropdown-item" href="#">Maine</a></li>
+                      <li><a class="dropdown-item" href="#">Maryland</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Massachusetts</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Michigan</a></li>
+                      <li><a class="dropdown-item" href="#">Minnesota</a></li>
+                      <li><a class="dropdown-item" href="#">Mississippi</a></li>
+                      <li><a class="dropdown-item" href="#">Missouri</a></li>
+                      <li><a class="dropdown-item" href="#">Montana</a></li>
+                      <li><a class="dropdown-item" href="#">Nebraska</a></li>
+                      <li><a class="dropdown-item" href="#">Nevada</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">New Hampshire</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">New Jersey</a></li>
+                      <li><a class="dropdown-item" href="#">New Mexico</a></li>
+                      <li><a class="dropdown-item" href="#">New York</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">North Carolina</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">North Dakota</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Ohio</a></li>
+                      <li><a class="dropdown-item" href="#">Oklahoma</a></li>
+                      <li><a class="dropdown-item" href="#">Oregon</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Pennsylvania</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Rhode Island</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">South Carolina</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">South Dakota</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Tennessee</a></li>
+                      <li><a class="dropdown-item" href="#">Texas</a></li>
+                      <li><a class="dropdown-item" href="#">Utah</a></li>
+                      <li><a class="dropdown-item" href="#">Vermont</a></li>
+                      <li><a class="dropdown-item" href="#">Virginia</a></li>
+                      <li><a class="dropdown-item" href="#">Washington</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">West Virginia</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Wisconsin</a></li>
+                      <li><a class="dropdown-item" href="#">Wyoming</a></li>
+                    </ul>
+                  </div>
+                  <label for="city">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="Detroit"
+                  />
+                  <label for="phone">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="(123) 456-7890"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <br /><br /><br />
+          <hr />
+          <!-- Payment info -->
+          <section>
+            <div class="container-sm">
+              <div class="row">
+                <div class="col"><h1>Payment Information</h1></div>
+                <!-- <div class="col">Pay with:</div> -->
+                <div class="col">
+                  <div><b>Select Payment Method:</b></div>
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >Visa</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2"
+                      >MasterCard</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="option3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3"
+                      >American Express</label
+                    >
+                  </div>
+                  <div class="col">
+                    <br />
+                    <label for="cardNumber">Card Number</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="cardNumber"
+                      placeholder="1234 5678 8765 4321"
+                    />
+                    <label for="exp">Card Expiration</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exp"
+                      placeholder="01/91"
+                    />
+                    <label for="cvv">CVV</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="cvv"
+                      placeholder="321"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <br /><br /><br />
+          <!-- Order cost-breakdown -->
+          <section></section>
+        </div>
+        <div class="col">
+          <!-- <div class="container"> -->
+            <b>Subtotal:</b>
+            <b>Shipping:</b>
+            <b>Estimated Tax:</b>
+          </div>
+        </div>
+      </div>
     
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
