@@ -7,4 +7,11 @@ body{
 }
 .footerrow {
     padding-bottom: 30px;
+    background-color: #f2f2f2;
+}
+
+.remove{
+    color: red;
+    font-size: small;
+    font-weight: 600;
 }
