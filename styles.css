@@ -1,4 +1,4 @@
-btn {
+.btn {
     background-color: green;
 }
 .btn:hover{
@@ -28,4 +28,10 @@ p.card-text .price {
     margin-bottom: 50px;
     border: solid black;
     height: 250px; 
+}
+.card {
+    border: 0;
+    display: flex;
+    
+
 }
