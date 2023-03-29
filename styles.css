@@ -1,8 +1,28 @@
+.herolst {
+    height: 200px;
+    background-image: linear-gradient(#00ff66, rgb(247, 242, 242));
+    margin-bottom: 30px;
+}
+.herolst h5 { 
+    font-family:'Karla', sans-serif;
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.herolst p {
+    font-family: 'Karla', sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+.row {
+
+}
 .btn {
-    background-color: green;
+    background-color: hsla(144, 100%, 50%, 1);
 }
 .btn:hover{
-    background-color: green;
+    background-color: hsla(144, 100%, 50%, 1);
 }
 a:hover{
     text-decoration: none;
@@ -11,7 +31,7 @@ a:link{
     color: black;
 }
 a:active{
-    color: green;
+    color: hsla(144, 100%, 50%, 1);
 }
 a:visited{
     color: black;
@@ -31,7 +51,4 @@ p.card-text .price {
 }
 .card {
     border: 0;
-    display: flex;
-    
-
 }
