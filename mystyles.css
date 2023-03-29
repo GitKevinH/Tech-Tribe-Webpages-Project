@@ -1,4 +1,4 @@
-btn {
+.btn {
     background-color: green;
 }
 .btn:hover{
@@ -23,9 +23,9 @@ p.card-text .price {
     width: 100px;
     height:100px;
 }
-.banner .herolike{
+/* .banner .herolike{
     margin-top: 50px;
     margin-bottom: 50px;
     border: solid black;
     height: 250px; 
-}
+} */
