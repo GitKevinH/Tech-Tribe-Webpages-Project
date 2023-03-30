@@ -13,12 +13,131 @@
     <title>SET-Checkout</title>
   </head>
   <body>
-    <div class="container-sm">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-black  navbar-light p-3 shadow-sm">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img class="logo" src="stelogo.png" alt="logo" width="100px" />
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+          <div class="input-group">
+              <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+          </div>
+        </div>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="ms-auto d-none d-lg-block">
+            <div class="input-group">
+              <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+          </div>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase text-white active" aria-current="page" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase text-white" href="product-listing.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase text-white" href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase text-white" href="shopping-cart.html"><i class="fa-solid fa-cart-shopping me-1"></i> View Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Beginning of checkout code -->
+    <div class="container-sm" style="margin-top: 50px;">
       <div class="row">
         <div class="col-6">
           <!-- Cart items -->
-          <section></section>
+          <section>
 
+            <div class="card-header py-3" style="background-color: trans;">
+              <table class="table" style="background-color: transparent;">
+                <thead class="table-bordered border-left-0 border-top-0 border-right-0">
+                  <tr>
+                <th scope="col" class="border-left-0 border-top-0"></th>
+                <th scope="col" class="border-top-0">Shopping Cart</th>
+                <th scope="col" class="border-top-0">Product:</th>
+                <th scope="col" class="border-top-0 border-right-0">Price:</th>
+                  </tr>
+                </thead>
+                <tbody style="background-color: transparent;">
+                  <tr>
+                    <td> </td>
+                    <td><img src="images/beanie.png" style="width:75px; height:75px"></td>
+                    <td>
+                      <div class="products">
+                      <p class="mb-1">Stiegler EdTech Beanie</p>
+                      <small>Beanie - Grey</small>
+                      <br>
+                      <a href="" class="remove">Remove</a>
+                    </div>
+                  </td>
+                    <td>$15.00</td>
+                  </tr>
+                  <tr>
+                    <td> </td>
+                    <td><img src="images/cltbear.png" style="width:75px; height:75px"></td>
+                    <td>
+                      <div>
+                      <p class="mb-1">Stiegler EdTech Teddy Bear</p>
+                      <small>Cohort 5, Charlotte</small>
+                      <br>
+                      <a href="" class="remove">Remove</a>
+                    </div>
+                  </td>
+                    <td>$15.00</td>
+                  </tr>
+                  <tr>
+                    <td> </td>
+                    <td><img src="images/hoodie-2-mi.png" style="width:75px; height:75px"></td>
+                    <td>
+                      <div>
+                      <p class="mb-1">CTAC Hoodie</p>
+                      <small>Cohort 5, Michigan - Black, Large</small>
+                      <br>
+                      <a href="" class="remove">Remove</a>
+                    </div>
+                  </td>
+                    <td>$35.00</td>
+                  </tr>
+                </tbody>
+              </table>
+                    </div>
+
+
+
+          </section>
+            <br><br>
           <!-- Shipping info -->
           <section>
             <div class="container-sm">
@@ -62,87 +181,60 @@
                     id="zipcode"
                     placeholder="11233"
                   />
-                  <label for="state">State</label>
-                  <div class="dropdown">
-                    <button
-                      class="btn btn-secondary dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Select
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><button class="dropdown-item" type="button">Alabama</button></li>
-                      <li><button class="dropdown-item" type="button">Alaska</button></li>
-                      <li><button class="dropdown-item" type="button">Arizona</button></li>
-                      <li><button class="dropdown-item" type="button">Arkansas</button></li>
-                      <li><button class="dropdown-item" type="button">California</button></li>
-                      <li><button class="dropdown-item" type="button">Colorado</button></li>
-                      <li><button class="dropdown-item" type="button">Connecticut</button></li>
-                      <li><button class="dropdown-item" type="button">Delaware</button></li>
-                      <li><button class="dropdown-item" type="button">Florida</button></li>
-                      <li><button class="dropdown-item" type="button">Georgia</button></li>
-                      <li><button class="dropdown-item" type="button">Hawaii</button></li>
-                      <li><button class="dropdown-item" type="button">Idaho</button></li>
-                      <li><button class="dropdown-item" type="button">Illinois</button></li>
-                      <li><button class="dropdown-item" type="button">Indiana</button></li>
-                      <li><button class="dropdown-item" type="button">Iowa</button></li>
-                      <li><button class="dropdown-item" type="button">Kansas</button></li>
-                      <li><button class="dropdown-item" type="button">Kentucky</button></li>
-                      <li><button class="dropdown-item" type="button">Louisiana</button></li>
-                      <li><button class="dropdown-item" type="button">Maine</button></li>
-                      <li><button class="dropdown-item" type="button">Maryland</button></li>
-                      <li>
-                        <button class="dropdown-item" type="button">Massachusetts</button>
-                      </li>
-                      <li><button class="dropdown-item" type="button">Michigan</button></li>
-                      <li><button class="dropdown-item" type="button">Minnesota</button></li>
-                      <li><button class="dropdown-item" type="button">Mississippi</button></li>
-                      <li><button class="dropdown-item" type="button">Missouri</button></li>
-                      <li><button class="dropdown-item" type="button">Montana</button></li>
-                      <li><button class="dropdown-item" type="button">Nebraska</button></li>
-                      <li><button class="dropdown-item" type="button">Nevada</button></li>
-                      <li>
-                        <button class="dropdown-item" type="button">New Hampshire</button>
-                      </li>
-                      <li><button class="dropdown-item" type="button">New Jersey</button></li>
-                      <li><button class="dropdown-item" type="button">New Mexico</button></li>
-                      <li><button class="dropdown-item" type="button">New York</button></li>
-                      <li>
-                        <button class="dropdown-item" type="button">North Carolina</button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item" type="button">North Dakota</button>
-                      </li>
-                      <li><button class="dropdown-item" type="button">Ohio</button></li>
-                      <li><button class="dropdown-item" type="button">Oklahoma</button></li>
-                      <li><button class="dropdown-item" type="button">Oregon</button></li>
-                      <li>
-                        <button class="dropdown-item" type="button">Pennsylvania</button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item" type="button">Rhode Island</button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item" type="button">South Carolina</button>
-                      </li>
-                      <li>
-                        <button class="dropdown-item" type="button">South Dakota</button>
-                      </li>
-                      <li><button class="dropdown-item" type="button">Tennessee</button></li>
-                      <li><button class="dropdown-item" type="button">Texas</button></li>
-                      <li><button class="dropdown-item" type="button">Utah</button></li>
-                      <li><button class="dropdown-item" type="button">Vermont</button></li>
-                      <li><button class="dropdown-item" type="button">Virginia</button></li>
-                      <li><button class="dropdown-item" type="button">Washington</button></li>
-                      <li>
-                        <button class="dropdown-item" type="button">West Virginia</button>
-                      </li>
-                      <li><button class="dropdown-item" type="button">Wisconsin</button></li>
-                      <li><button class="dropdown-item" type="button">Wyoming</button></li>
-                    </ul>
-                  </div>
+                  <label for="state" class="form-label">State</label>
+                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                      <datalist id="datalistOptions">
+                        <option value="Alabama">
+                          <option value="Alaska">
+                          <option value="Arizona">
+                          <option value="Arkansas">
+                          <option value="California">
+                          <option value="Colorado">
+                          <option value="Connecticut">
+                          <option value="Delaware">
+                          <option value="Florida">
+                          <option value="Georgia">
+                          <option value="Hawaii">
+                          <option value="Idaho">
+                          <option value="Illinois">
+                          <option value="Indiana">
+                          <option value="Iowa">
+                          <option value="Kansas">
+                          <option value="Kentucky">
+                          <option value="Louisiana">
+                          <option value="Maine">
+                          <option value="Maryland">
+                          <option value="Massachusetts">
+                          <option value="Michigan">
+                          <option value="Minnesota">
+                          <option value="Mississippi">
+                          <option value="Missouri">
+                          <option value="Montana">
+                          <option value="Nebraska">
+                          <option value="Nevada">
+                          <option value="New Hampshire">
+                          <option value="New Jersey">
+                          <option value="New Mexico">
+                          <option value="New York">
+                          <option value="North Carolina">
+                          <option value="North Dakota">
+                          <option value="Ohio">
+                          <option value="Oklahoma">
+                          <option value="Oregon">
+                          <option value="Pennsylvania">
+                          <option value="Rhode Island">
+                          <option value="South Carolina">
+                          <option value="South Dakota">
+                          <option value="Tennessee">
+                          <option value="Texas">
+                          <option value="Utah">
+                          <option value="Vermont">
+                          <option value="Virginia">
+                          <option value="Washington">
+                          <option value="West Virginia">
+                          <option value="Wisconsin">
+                          <option value="Wyoming">
+                      </datalist>
                   <label for="city">City</label>
                   <input
                     type="text"
@@ -206,87 +298,62 @@
                     id="zipcode"
                     placeholder="11233"
                   />
-                  <label for="state">State</label>
-                  <div class="dropdown">
-                    <button
-                      class="btn btn-secondary dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Select
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Alabama</a></li>
-                      <li><a class="dropdown-item" href="#">Alaska</a></li>
-                      <li><a class="dropdown-item" href="#">Arizona</a></li>
-                      <li><a class="dropdown-item" href="#">Arkansas</a></li>
-                      <li><a class="dropdown-item" href="#">California</a></li>
-                      <li><a class="dropdown-item" href="#">Colorado</a></li>
-                      <li><a class="dropdown-item" href="#">Connecticut</a></li>
-                      <li><a class="dropdown-item" href="#">Delaware</a></li>
-                      <li><a class="dropdown-item" href="#">Florida</a></li>
-                      <li><a class="dropdown-item" href="#">Georgia</a></li>
-                      <li><a class="dropdown-item" href="#">Hawaii</a></li>
-                      <li><a class="dropdown-item" href="#">Idaho</a></li>
-                      <li><a class="dropdown-item" href="#">Illinois</a></li>
-                      <li><a class="dropdown-item" href="#">Indiana</a></li>
-                      <li><a class="dropdown-item" href="#">Iowa</a></li>
-                      <li><a class="dropdown-item" href="#">Kansas</a></li>
-                      <li><a class="dropdown-item" href="#">Kentucky</a></li>
-                      <li><a class="dropdown-item" href="#">Louisiana</a></li>
-                      <li><a class="dropdown-item" href="#">Maine</a></li>
-                      <li><a class="dropdown-item" href="#">Maryland</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Massachusetts</a>
-                      </li>
-                      <li><a class="dropdown-item" href="#">Michigan</a></li>
-                      <li><a class="dropdown-item" href="#">Minnesota</a></li>
-                      <li><a class="dropdown-item" href="#">Mississippi</a></li>
-                      <li><a class="dropdown-item" href="#">Missouri</a></li>
-                      <li><a class="dropdown-item" href="#">Montana</a></li>
-                      <li><a class="dropdown-item" href="#">Nebraska</a></li>
-                      <li><a class="dropdown-item" href="#">Nevada</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">New Hampshire</a>
-                      </li>
-                      <li><a class="dropdown-item" href="#">New Jersey</a></li>
-                      <li><a class="dropdown-item" href="#">New Mexico</a></li>
-                      <li><a class="dropdown-item" href="#">New York</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">North Carolina</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">North Dakota</a>
-                      </li>
-                      <li><a class="dropdown-item" href="#">Ohio</a></li>
-                      <li><a class="dropdown-item" href="#">Oklahoma</a></li>
-                      <li><a class="dropdown-item" href="#">Oregon</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Pennsylvania</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Rhode Island</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">South Carolina</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">South Dakota</a>
-                      </li>
-                      <li><a class="dropdown-item" href="#">Tennessee</a></li>
-                      <li><a class="dropdown-item" href="#">Texas</a></li>
-                      <li><a class="dropdown-item" href="#">Utah</a></li>
-                      <li><a class="dropdown-item" href="#">Vermont</a></li>
-                      <li><a class="dropdown-item" href="#">Virginia</a></li>
-                      <li><a class="dropdown-item" href="#">Washington</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">West Virginia</a>
-                      </li>
-                      <li><a class="dropdown-item" href="#">Wisconsin</a></li>
-                      <li><a class="dropdown-item" href="#">Wyoming</a></li>
-                    </ul>
-                  </div>
+                
+                  <label for="state" class="form-label">State</label>
+                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                      <datalist id="datalistOptions">
+                        <option value="Alabama">
+                          <option value="Alaska">
+                          <option value="Arizona">
+                          <option value="Arkansas">
+                          <option value="California">
+                          <option value="Colorado">
+                          <option value="Connecticut">
+                          <option value="Delaware">
+                          <option value="Florida">
+                          <option value="Georgia">
+                          <option value="Hawaii">
+                          <option value="Idaho">
+                          <option value="Illinois">
+                          <option value="Indiana">
+                          <option value="Iowa">
+                          <option value="Kansas">
+                          <option value="Kentucky">
+                          <option value="Louisiana">
+                          <option value="Maine">
+                          <option value="Maryland">
+                          <option value="Massachusetts">
+                          <option value="Michigan">
+                          <option value="Minnesota">
+                          <option value="Mississippi">
+                          <option value="Missouri">
+                          <option value="Montana">
+                          <option value="Nebraska">
+                          <option value="Nevada">
+                          <option value="New Hampshire">
+                          <option value="New Jersey">
+                          <option value="New Mexico">
+                          <option value="New York">
+                          <option value="North Carolina">
+                          <option value="North Dakota">
+                          <option value="Ohio">
+                          <option value="Oklahoma">
+                          <option value="Oregon">
+                          <option value="Pennsylvania">
+                          <option value="Rhode Island">
+                          <option value="South Carolina">
+                          <option value="South Dakota">
+                          <option value="Tennessee">
+                          <option value="Texas">
+                          <option value="Utah">
+                          <option value="Vermont">
+                          <option value="Virginia">
+                          <option value="Washington">
+                          <option value="West Virginia">
+                          <option value="Wisconsin">
+                          <option value="Wyoming">
+                      </datalist>
+                
                   <label for="city">City</label>
                   <input
                     type="text"
@@ -385,41 +452,127 @@
         </div>
         <!-- Order cost-breakdown -->
         <div class="col-6">
-          <section style=" padding: 50px; border-radius: 10px; position: fixed; border: 3px solid rgb(120, 120, 120);">
-            <table >
+          <section style="text-align: center; padding: 50px; border-radius: 10px; position: sticky; top: 200px; border: 3px solid rgba(241, 241, 241, 0.900);">
+            <table style="margin-left: auto; margin-right: auto;">
               <tr>
                 <td><b>Subtotal:</b></td>
-                <td>$X.XX</td>
+                <td style="padding-left: 15px;">$65.00</td>
               </tr>
               <tr>
                 <td><b>Shipping:</b></td>
-                <td>$X.XX</td>
+                <td style="padding-left: 15px;">FREE</td>
               </tr>
               <tr>
                 <td>
-                 <b>Est. Tax:</b> 
+                 <b>Est. Tax (MI):</b> 
                 </td>
-                <td>   $X.XX</td>
+                <td style="padding-left: 15px;">   $3.90</td>
               </tr>
               <tr style="border-top: 1px solid grey;">
                 <td>
                   <b>Total:</b> 
                 </td>
-                <td>   $X.XX</td>
+                <td style="padding-left: 15px;">   $68.90</td>
               </tr>
             </table>
+            <br>
+            Estimated Arrival: 2-4 Business Days
             <br><br>
             <button type="button" class="btn btn-primary">Place Order</button>
 
-            </div>
+            
           </section>
-
+        </div>
         </div>
           
         </div>
         
       </div>
     </div>
+
+   <!-- Footer-->
+<footer class="footer-20192">
+  <div class="site-section" style="background-color:black;">
+      <div class="container pt-4 pb-4">
+          <div class="row text-white px-2">
+            <div class="col-sm ">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="stelogo.png" alt="logo" width="100px" />
+                  </a>
+            </div>
+            
+            <div class="col-sm ">
+              <h3 >Information</h3>
+              <ul class="list-unstyled links ">
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Our Company</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Careers</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Sustainability</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <h3>Get Help</h3>
+              <ul class="list-unstyled links">
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Order Status</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Shipping and Delivery</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Returns</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <h3>Promotions</h3>
+              <ul class="list-unstyled links">
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Gift Cards</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Sign Up For Emails</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Send Us Feedback</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Social Media</h3>
+              <ul class="list-unstyled mb-0">
+                <li>
+                    <a href="https://www.instagram.com/stiegleredtech/?hl=en" ><img src="images/instagramicon.webp" height="30" width="30" class="mt-1" alt="Stiegler Ed Tech Instagram Page"/></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/stiegleredtech"><img src="images/facebookicon.svg" height="30" width="30" class="mt-2" alt="Stiegler Ed Tech Instagram Page"/>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/stiegler-edtech/"></a><img src="images/linkedinicon.svg" height="30" width="30" class="mt-2" alt="Stiegler Ed Tech Instagram Page"/>
+                </li>
+                <li>
+                    <a href="https://www.twitch.tv/ytacnation"></a><img src="images/twitchicon.svg" height="30" width="30" class="mt-2" alt="Stiegler Ed Tech Instagram Page"/>
+                </li>
+            </ul>
+            </div>
+      <!-- Copyright Section-->
+          <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)">© 2023 Copyright
+     </div>
+     <!-- Copyright Section ENDS -->
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
@@ -428,23 +581,3 @@
     ></script>
   </body>
 </html>
-
-
-<!-- <div class="col-1">
-  <br />
-  <div class="d-flex flex-column bd-highlight mb-3">
-    <b>Subtotal</b>
-    <b>Shipping</b>
-    <b>Est. Tax</b>
-    <b>Total</b>
-  </div>
-</div>
-<div class="col-1">
-  <br />
-  <div class="d-flex flex-column bd-highlight mb-3">
-    <b>$X.XX</b>
-    <b>$X.XX</b>
-    <b>$X.XX</b>
-    <b>$X.XX</b>
-  </div>
-</div> -->
