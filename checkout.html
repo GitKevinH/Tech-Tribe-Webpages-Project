@@ -1,12 +1,583 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <title>SET-Checkout</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-black  navbar-light p-3 shadow-sm">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img class="logo" src="stelogo.png" alt="logo" width="100px" />
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
     
-</body>
+        <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+          <div class="input-group">
+              <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+          </div>
+        </div>
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="ms-auto d-none d-lg-block">
+            <div class="input-group">
+              <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+          </div>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase text-white active" aria-current="page" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase text-white" href="product-listing.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase text-white" href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link mx-2 text-uppercase text-white" href="shopping-cart.html"><i class="fa-solid fa-cart-shopping me-1"></i> View Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Beginning of checkout code -->
+    <div class="container-sm" style="margin-top: 50px;">
+      <div class="row">
+        <div class="col-6">
+          <!-- Cart items -->
+          <section>
+
+            <div class="card-header py-3" style="background-color: trans;">
+              <table class="table" style="background-color: transparent;">
+                <thead class="table-bordered border-left-0 border-top-0 border-right-0">
+                  <tr>
+                <th scope="col" class="border-left-0 border-top-0"></th>
+                <th scope="col" class="border-top-0">Shopping Cart</th>
+                <th scope="col" class="border-top-0">Product:</th>
+                <th scope="col" class="border-top-0 border-right-0">Price:</th>
+                  </tr>
+                </thead>
+                <tbody style="background-color: transparent;">
+                  <tr>
+                    <td> </td>
+                    <td><img src="images/beanie.png" style="width:75px; height:75px"></td>
+                    <td>
+                      <div class="products">
+                      <p class="mb-1">Stiegler EdTech Beanie</p>
+                      <small>Beanie - Grey</small>
+                      <br>
+                      <a href="" class="remove">Remove</a>
+                    </div>
+                  </td>
+                    <td>$15.00</td>
+                  </tr>
+                  <tr>
+                    <td> </td>
+                    <td><img src="images/cltbear.png" style="width:75px; height:75px"></td>
+                    <td>
+                      <div>
+                      <p class="mb-1">Stiegler EdTech Teddy Bear</p>
+                      <small>Cohort 5, Charlotte</small>
+                      <br>
+                      <a href="" class="remove">Remove</a>
+                    </div>
+                  </td>
+                    <td>$15.00</td>
+                  </tr>
+                  <tr>
+                    <td> </td>
+                    <td><img src="images/hoodie-2-mi.png" style="width:75px; height:75px"></td>
+                    <td>
+                      <div>
+                      <p class="mb-1">CTAC Hoodie</p>
+                      <small>Cohort 5, Michigan - Black, Large</small>
+                      <br>
+                      <a href="" class="remove">Remove</a>
+                    </div>
+                  </td>
+                    <td>$35.00</td>
+                  </tr>
+                </tbody>
+              </table>
+                    </div>
+
+
+
+          </section>
+            <br><br>
+          <!-- Shipping info -->
+          <section>
+            <div class="container-sm">
+              <div class="row">
+                <div class="col">
+                  <h1>Shipping</h1>
+                </div>
+                <div class="col">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="John"
+                  />
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Doe"
+                  />
+                  <label for="address" class="form-label">Street Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="123 Main St"
+                  />
+                  <label for="address2">Street Address 2 (optional)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address2"
+                    placeholder="Suite 456"
+                  />
+                  <label for="zipcode">Zipcode</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zipcode"
+                    placeholder="11233"
+                  />
+                  <label for="state" class="form-label">State</label>
+                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                      <datalist id="datalistOptions">
+                        <option value="Alabama">
+                          <option value="Alaska">
+                          <option value="Arizona">
+                          <option value="Arkansas">
+                          <option value="California">
+                          <option value="Colorado">
+                          <option value="Connecticut">
+                          <option value="Delaware">
+                          <option value="Florida">
+                          <option value="Georgia">
+                          <option value="Hawaii">
+                          <option value="Idaho">
+                          <option value="Illinois">
+                          <option value="Indiana">
+                          <option value="Iowa">
+                          <option value="Kansas">
+                          <option value="Kentucky">
+                          <option value="Louisiana">
+                          <option value="Maine">
+                          <option value="Maryland">
+                          <option value="Massachusetts">
+                          <option value="Michigan">
+                          <option value="Minnesota">
+                          <option value="Mississippi">
+                          <option value="Missouri">
+                          <option value="Montana">
+                          <option value="Nebraska">
+                          <option value="Nevada">
+                          <option value="New Hampshire">
+                          <option value="New Jersey">
+                          <option value="New Mexico">
+                          <option value="New York">
+                          <option value="North Carolina">
+                          <option value="North Dakota">
+                          <option value="Ohio">
+                          <option value="Oklahoma">
+                          <option value="Oregon">
+                          <option value="Pennsylvania">
+                          <option value="Rhode Island">
+                          <option value="South Carolina">
+                          <option value="South Dakota">
+                          <option value="Tennessee">
+                          <option value="Texas">
+                          <option value="Utah">
+                          <option value="Vermont">
+                          <option value="Virginia">
+                          <option value="Washington">
+                          <option value="West Virginia">
+                          <option value="Wisconsin">
+                          <option value="Wyoming">
+                      </datalist>
+                  <label for="city">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="Detroit"
+                  />
+                  <label for="phone">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="(123) 456-7890"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <br /><br /><br />
+          <hr />
+          <!-- Billing info -->
+          <section>
+            <div class="container-sm">
+              <div class="row">
+                <div class="col">
+                  <h1 style="padding-right: 22px;">Billing</h1>
+                </div>
+                <div class="col">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="John"
+                  />
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Doe"
+                  />
+                  <label for="address" class="form-label">Street Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="123 Main St"
+                  />
+                  <label for="address2">Street Address 2 (optional)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address2"
+                    placeholder="Suite 456"
+                  />
+                  <label for="zipcode">Zipcode</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="zipcode"
+                    placeholder="11233"
+                  />
+                
+                  <label for="state" class="form-label">State</label>
+                  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                      <datalist id="datalistOptions">
+                        <option value="Alabama">
+                          <option value="Alaska">
+                          <option value="Arizona">
+                          <option value="Arkansas">
+                          <option value="California">
+                          <option value="Colorado">
+                          <option value="Connecticut">
+                          <option value="Delaware">
+                          <option value="Florida">
+                          <option value="Georgia">
+                          <option value="Hawaii">
+                          <option value="Idaho">
+                          <option value="Illinois">
+                          <option value="Indiana">
+                          <option value="Iowa">
+                          <option value="Kansas">
+                          <option value="Kentucky">
+                          <option value="Louisiana">
+                          <option value="Maine">
+                          <option value="Maryland">
+                          <option value="Massachusetts">
+                          <option value="Michigan">
+                          <option value="Minnesota">
+                          <option value="Mississippi">
+                          <option value="Missouri">
+                          <option value="Montana">
+                          <option value="Nebraska">
+                          <option value="Nevada">
+                          <option value="New Hampshire">
+                          <option value="New Jersey">
+                          <option value="New Mexico">
+                          <option value="New York">
+                          <option value="North Carolina">
+                          <option value="North Dakota">
+                          <option value="Ohio">
+                          <option value="Oklahoma">
+                          <option value="Oregon">
+                          <option value="Pennsylvania">
+                          <option value="Rhode Island">
+                          <option value="South Carolina">
+                          <option value="South Dakota">
+                          <option value="Tennessee">
+                          <option value="Texas">
+                          <option value="Utah">
+                          <option value="Vermont">
+                          <option value="Virginia">
+                          <option value="Washington">
+                          <option value="West Virginia">
+                          <option value="Wisconsin">
+                          <option value="Wyoming">
+                      </datalist>
+                
+                  <label for="city">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="Detroit"
+                  />
+                  <label for="phone">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="(123) 456-7890"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <br /><br /><br />
+          <hr />
+          <!-- Payment info -->
+          <section>
+            <div class="container-sm">
+              <div class="row">
+                <div class="col"><h1>Payment Information</h1></div>
+                <!-- <div class="col">Pay with:</div> -->
+                <div class="col">
+                  <div><b>Select Payment Method:</b></div>
+                  <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >Visa</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2"
+                      >MasterCard</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="option3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3"
+                      >American Express</label
+                    >
+                  </div>
+                  <div class="col">
+                    <br />
+                    <label for="cardNumber">Card Number</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="cardNumber"
+                      placeholder="1234 5678 8765 4321"
+                    />
+                    <label for="exp">Card Expiration</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exp"
+                      placeholder="01/91"
+                    />
+                    <label for="cvv">CVV</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="cvv"
+                      placeholder="321"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <br /><br /><br />
+        </div>
+        <!-- Order cost-breakdown -->
+        <div class="col-6">
+          <section style="text-align: center; padding: 50px; border-radius: 10px; position: sticky; top: 200px; border: 3px solid rgba(241, 241, 241, 0.900);">
+            <table style="margin-left: auto; margin-right: auto;">
+              <tr>
+                <td><b>Subtotal:</b></td>
+                <td style="padding-left: 15px;">$65.00</td>
+              </tr>
+              <tr>
+                <td><b>Shipping:</b></td>
+                <td style="padding-left: 15px;">FREE</td>
+              </tr>
+              <tr>
+                <td>
+                 <b>Est. Tax (MI):</b> 
+                </td>
+                <td style="padding-left: 15px;">   $3.90</td>
+              </tr>
+              <tr style="border-top: 1px solid grey;">
+                <td>
+                  <b>Total:</b> 
+                </td>
+                <td style="padding-left: 15px;">   $68.90</td>
+              </tr>
+            </table>
+            <br>
+            Estimated Arrival: 2-4 Business Days
+            <br><br>
+            <button type="button" class="btn btn-primary">Place Order</button>
+
+            
+          </section>
+        </div>
+        </div>
+          
+        </div>
+        
+      </div>
+    </div>
+
+   <!-- Footer-->
+<footer class="footer-20192">
+  <div class="site-section" style="background-color:black;">
+      <div class="container pt-4 pb-4">
+          <div class="row text-white px-2">
+            <div class="col-sm ">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="stelogo.png" alt="logo" width="100px" />
+                  </a>
+            </div>
+            
+            <div class="col-sm ">
+              <h3 >Information</h3>
+              <ul class="list-unstyled links ">
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Our Company</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Careers</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Sustainability</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <h3>Get Help</h3>
+              <ul class="list-unstyled links">
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Order Status</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Shipping and Delivery</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Returns</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <h3>Promotions</h3>
+              <ul class="list-unstyled links">
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Gift Cards</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Sign Up For Emails</a>
+                </li>
+                <li class="mt-2">
+                    <a href="#!" class="text-white">Send Us Feedback</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Social Media</h3>
+              <ul class="list-unstyled mb-0">
+                <li>
+                    <a href="https://www.instagram.com/stiegleredtech/?hl=en" ><img src="images/instagramicon.webp" height="30" width="30" class="mt-1" alt="Stiegler Ed Tech Instagram Page"/></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/stiegleredtech"><img src="images/facebookicon.svg" height="30" width="30" class="mt-2" alt="Stiegler Ed Tech Instagram Page"/>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/stiegler-edtech/"></a><img src="images/linkedinicon.svg" height="30" width="30" class="mt-2" alt="Stiegler Ed Tech Instagram Page"/>
+                </li>
+                <li>
+                    <a href="https://www.twitch.tv/ytacnation"></a><img src="images/twitchicon.svg" height="30" width="30" class="mt-2" alt="Stiegler Ed Tech Instagram Page"/>
+                </li>
+            </ul>
+            </div>
+      <!-- Copyright Section-->
+          <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)">© 2023 Copyright
+     </div>
+     <!-- Copyright Section ENDS -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
