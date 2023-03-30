@@ -15,7 +15,7 @@
 
     <style>
 
-        .test {
+.test {
         display: flex;
         /* height: 100%; */
 
@@ -52,6 +52,14 @@
   .card:hover .card-img-overlay {
     opacity: 0.5;
 }
+
+.Hero{
+    animation: fadeIn; 
+    animation-fill-mode: backwards;
+    animation-delay: 2s;
+    animation-duration: 2.5s; 
+}
+
 
 
     </style>
@@ -117,64 +125,64 @@
       </nav>
 
 
-<!-- Hero -->
-<div id="carouselExampleCaptions" class="carousel slide carousel-fade">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://i.pinimg.com/originals/bf/ae/3f/bfae3fa83ae7efd6b7b56c3df0fac9bf.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption">
-            <h1>New Spring<br>Merchandise Collection</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p><a href="#" class="btn btn-light mt3 m-2">Shop Now</a></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://images5.alphacoders.com/456/456536.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption">
-            <h1>New Spring<br>Merchandise Collection</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p><a href="#" class="btn btn-light mt3 m-2">Shop Now</a></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://wallpaper.dog/large/5567966.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption">
-            <h1>New Spring<br>Merchandise Collection</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p><a href="#" class="btn btn-light mt3 m-2">Shop Now</a></p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-<!-- ABOUT US -->
+  <!-- Hero -->
+<div class="Hero">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)">
+          <div class="carousel-item active">
+            <img src="images/celebration.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h1 style="text-shadow:2px 2px black;">Stiegler EdTech<br>Merchandise</h1>
+              <p style="text-shadow:2px 2px black;">Get all of your Stiegler Edtech branded merchandise <br> at our brand new merchandise store.</p>
+              <p><a href="#" class="btn btn-light mt3 m-2">Shop Now</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/hill.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h1 style="text-shadow:2px 2px black;">New Spring<br>Merchandise Collection</h1>
+              <p style="text-shadow:2px 2px black;">Search our new spring merchandise inventory.<br>Clothing, Water Bottles, Laptop Cases, and More.</p>
+              <p><a href="#" class="btn btn-light mt3 m-2">Shop Now</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/City.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h1 style="text-shadow:2px 2px black;">Customizability</h1>
+              <p style="text-shadow:2px 2px black;">Choose between three of our CTAC Cohort 5 <br> cities to customize your merchandise.</p>
+              <p><a href="#" class="btn btn-light mt3 m-2">Shop Now</a></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+    <!-- ABOUT US -->
+    <br>
 <div class="container pt-4">
     <div class="row">
 
       <div class="col">
         <h2>About Us</h2>
-        Our clothing brand represents a community of like minded individuals who share a common interest, passion or goal. Whether you are lookng for casual wear, sportswear, or sylish outfits for special occasionas, we have something for everyone!
-
-We are a part of a community that constantly seeks to express one's self to stand out from the crowd and be recognized for your unique talents and abilities. You have an opportunity to express yourself, stand out from the crowd, and support a brand that cares about the world we live in. 
-
-
-
+        Our clothing brand represents a community of like minded individuals who share a common interest, passion or goal. Whether you are lookng for casual wear, sportswear, or sylish outfits for special occasionas, we have something for everyone! We are a part of a community that constantly seeks to express one's self to stand out from the crowd and be recognized for your unique talents and abilities. You have an opportunity to express yourself, stand out from the crowd, and support a brand that cares about the world we live in. 
       </div>
       <div class="col">
-        <img src="https://bigthink.com/wp-content/uploads/2019/07/working-with-millennials-keeping-them-happy-in-your-workplace.jpg" alt="A street in Europe" class="card-img-top">
+        <img src="https://bigthink.com/wp-content/uploads/2019/07/working-with-millennials-keeping-them-happy-in-your-workplace.jpg" alt="Happy People" class="card-img-top">
       </div>
     </div>
 </div>
@@ -264,159 +272,57 @@ We are a part of a community that constantly seeks to express one's self to stan
         </div>
         <div class="col-md-3">
           <div class="card">
-            <img src="images/placeit3.png" alt="">
+            <img src="images/placeit4.png" alt="">
           </div>
           <div class="card-body pt-4 text-end">
         </div>
         </div>
         <div class="col-md-3">
             <div class="card">
-              <img src="images/placeit4.png" alt="">
+              <img src="images/placeit3.png" alt="">
             </div>
             <div class="card-body pt-4 text-end">
             </div>
           </div>
       </div>
+
+
+      <div class="row ">
+        <div class="col-md-5 col-md-5">
+          <div class="card">
+            <img src="images/laughing.png" alt="">
+            <div class="card-img-overlay">
+                <h5 class="card-title">Legit</h5>
+                </div>
+          </div>
+          <div class="card-body pt-4 text-end">
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/placeit6.png" alt="">
+          </div>
+          <div class="card-body pt-4 text-end">
+        </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+              <img src="images/placeit7.png" alt="">
+            </div>
+            <div class="card-body pt-4 text-end">
+          </div>
+          </div>
+        </div>
+
       <br><br>
 </div>
   <!--Popular Items For Sale Section END-->
   <br>
   <br>
   
-  
-
-
-<!-- Another popular-->
-<br><br>
-<div class="container bg-dark-subtle">
-    <h2>Represent your school!</h2>
-    <div class="row"> <!-- g-3 to give spacing-->
-        <div class="col-12" > <!-- To let the cards collapse from desktop to mobile-->
-            <div class="card border-0">
-                <img src="images/laughing.png" alt="Unsure" class="card-img-top"width="100%" height="100%">
-                <div class="card-body">
-                    <h5 class="card-title">Title</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odio blanditiis qui, soluta inventore, velit veniam placeat accusamus nobis quos repellendus delectus distinctio tempora quod modi sit, dolores vel a!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <br>
-    
-</div>
-
-
-
-
-
-
-
-
-
-
-<!-- Another Popular Section-->
-<div class="container bg-dark-subtle">
-    <h2>Popular Right Now</h2>
-    <div class="row g-3"> <!-- g-3 to give spacing-->
-        <div class="col-12 col-xs-6 col-md-4"> <!-- To let the cards collapse from desktop to mobile-->
-            <div class="card border-0">
-                <img src="images/beanie.png" alt="Unsure" class="card-img-top"width="400" height="400">
-                <div class="card-body">
-                    <h5 class="card-title">Title</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odio blanditiis qui, soluta inventore, velit veniam placeat accusamus nobis quos repellendus delectus distinctio tempora quod modi sit, dolores vel a!</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-xs-6 col-md-4">
-            <div class="card border-0">
-                <img src="images/backpack.png" alt="Unsure" class="card-img-top" width="400" height="400">
-                <div class="card-body">
-                    <h5 class="card-title">Title</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odio blanditiis qui, soluta inventore, velit veniam placeat accusamus nobis quos repellendus delectus distinctio tempora quod modi sit, dolores vel a!</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-xs-6 col-md-4">
-            <div class="card border-0">
-                <img src="images/hoodie-2-clt.png" alt="Unsure" class="card-img-top" width="400" height="400">
-                <div class="card-body">
-                    <h5 class="card-title">Title</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odio blanditiis qui, soluta inventore, velit veniam placeat accusamus nobis quos repellendus delectus distinctio tempora quod modi sit, dolores vel a!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-
-</div>
-
-
-
-
-
-
-
-
-<!-- Product Deteails Section-->
-<div class="container">
-    <div>
-        <div class="row g-5"> <!-- g-5 to give spacing-->
-            <div class="col-4"><!--<h5>Details</h5>-->
-            </div>
-
-            <div class="col-8 pt-5"><h1>About This item</h5>
-            </div>
-        </div>
-    </div>
-    <br><br>
-
-
-    <div class="row g-5"> <!-- g-3 to give spacing-->
-        <div class="col-4"> <!-- To let the cards collapse from desktop to mobile-->
-            <div class="card border-0">
-                <div class="card-body">
-                    <h5 class="card-title">Details</h5>
-                    <ul>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis omnis atque incidunt illum quibusdam delectus. Corporis iste quos vel laboriosam porro? Expedita mollitia blanditiis, pariatur porro fuga fugit vel animi?</li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-8">
-            <div class="card border-0">
-                <div class="card-body">
-                    <h5 class="card-title">Description</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odio blanditiis qui, soluta inventore, velit veniam placeat accusamus nobis quos repellendus delectus distinctio tempora quod modi sit, dolores vel a!</p>
-                </div>
-            </div>
-        </div>
-    </div>
     <br>
 </div>
 <!-- Product Deteails Section END-->
-
-
-
-
 
     <footer class="footer-20192">
       <div class="site-section" style="background-color:black;">
@@ -499,6 +405,7 @@ We are a part of a community that constantly seeks to express one's self to stan
                 </li>
             </ul>
             </div>
+            </div>  
                      <!-- Copyright Section-->
           <div
           class="text-center p-3"
