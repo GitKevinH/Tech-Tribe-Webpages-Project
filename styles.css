@@ -1,7 +1,14 @@
+
 .herolst {
     height: 200px;
     background-image: linear-gradient(#00ff66, rgb(247, 242, 242));
     margin-bottom: 30px;
+
+https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
+
+body{
+    margin: auto;
+
 }
 .herolst h5 { 
     font-family:'Karla', sans-serif;
@@ -15,9 +22,7 @@
     font-size: larger;
     text-align: center;
 }
-.row {
 
-}
 .btn {
     background-color: hsla(144, 100%, 50%, 1);
 }
@@ -135,3 +140,4 @@ body {
       cursor: pointer;
       text-align: center;
     }
+
